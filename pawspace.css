@@ -1,0 +1,183 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #f6f6f6;
+}
+
+/* NAVBAR (NO CHANGE) */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #ff7f50;
+  color: white;
+}
+
+nav a {
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+/* PAGE FIX ONLY */
+.page {
+  display: none;
+  padding: 60px 20px 50px;
+  text-align: center;
+}
+
+/* HOME IMAGE FIX ONLY (same size as before) */
+.home-img {
+  width: 100%;
+  max-width: 1200px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* CARDS FIX ONLY */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* GALLERY FIX ONLY */
+.gallery img {
+  width: 220px;
+  height: 160px;
+  margin: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ANIMALS FIX (IMPORTANT) */
+.animals {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.animal {
+  background: white;
+  width: 110px;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.animal:hover {
+  transform: translateY(-5px);
+}
+
+.animal p {
+  margin: 5px 0 0;
+  font-weight: 600;
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+input, select, textarea {
+  padding: 10px;
+}
+
+button {
+  background: #ff7f50;
+  color: white;
+  border: none;
+  padding: 10px;
+
+}
+#shop .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  justify-items: center;
+}
+
+#shop .card {
+  width: 180px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+#shop .card:hover {
+  transform: translateY(-5px);
+}
+
+#shop .card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+#shop .card h3 {
+  font-size: 14px;
+  margin: 8px 0 0;
+}
+
+#shop .info {
+  font-size: 13px;
+  padding: 8px;
+}
+#services .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  justify-items: center;
+}
+
+#services .card {
+  width: 180px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+#services .card:hover {
+  transform: translateY(-5px);
+}
+
+#services .card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+#services .card h3 {
+  font-size: 14px;
+  margin: 8px 0 0;
+}
+
+#services .info {
+  font-size: 13px;
+  padding: 8px;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
